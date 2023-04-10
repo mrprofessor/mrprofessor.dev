@@ -1,0 +1,52 @@
+baseURL = "https://mrprofessor.dev/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+pygmentsCodefences = true
+pygmentsStyle = "manni"
+
+paginate = 30
+
+title = "mrprofessor"
+theme = "flamingo"
+[markup.goldmark.renderer]
+unsafe = true
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+publishDir = "docs"
+
+
+[menu]
+
+  # [[menu.main]]
+  #   identifier = "keyboards"
+  #   name = "keyboards"
+  #   url = "/keyboards/"
+  #   weight = 12
+
+
+  # [[menu.secondary]]
+  #   identifier = "about"
+  #   name = "about"
+  #   url = "/about/"
+  #   weight = 10
+
+[params]
+  author = "mrprofessor"
+  description = "thoughts, obsessions and mostly rants"
+  sitename = "mrprofessor's blog"
+  github = "https://github.com/mrprofessor"
+  twitter = "@weary_beard"
+  favicon = "/images/favicon.ico"
+  mainSections = "keyboards"
+
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
