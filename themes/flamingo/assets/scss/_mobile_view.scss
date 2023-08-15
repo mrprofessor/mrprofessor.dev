@@ -9,11 +9,11 @@ body {
 }
 
 .post-title, .date-label {
-    letter-spacing: 0.025rem;
+    // letter-spacing: 0.025rem;
 }
 
 p, sub, nav{
-    letter-spacing: 0.05rem;
+    // letter-spacing: 0.05rem;
 }
 
 .title-wrapper, .title {
@@ -104,14 +104,18 @@ nav {
         border-bottom: none;
     }
 
-      // Add some spaces before a sub-heading
-      h2 {
-        margin-top: 2rem;
+    // Add some spaces before a sub-heading
+    h2 {
         margin-top: 2rem;
         padding-bottom: 1rem;
         border-bottom: solid 1px $subscript-color;
         text-transform: uppercase;
-      }
+    }
+
+    h3 {
+	font-weight: 600;
+    }
+   
 }
 
 .blog-list {
