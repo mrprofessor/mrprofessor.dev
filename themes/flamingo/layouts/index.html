@@ -16,17 +16,20 @@
 	<div class="blog-list">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
                 <div class="collection-board">
+        <!--       {{ range .Paginator.Pages }} -->
+        <!--         {{if in .Params.tags "custom"}} -->
+        <!--             {{ .Render "keyboards-summary" }} -->
+        <!--         {{ end }} -->
+        <!--       {{ end }} -->
+        <!--       {{ range .Paginator.Pages }} -->
+        <!--         {{if in .Params.tags "vintage"}} -->
+        <!--             {{ .Render "keyboards-summary" }} -->
+        <!--         {{ end }} -->
+        <!--       {{ end }} -->
+
               {{ range .Paginator.Pages }}
-                {{if in .Params.tags "custom"}}
-                    {{ .Render "keyboards-summary" }}
-                {{ end }}
+                  {{ .Render "keyboards-summary" }}
               {{ end }}
-              {{ range .Paginator.Pages }}
-                {{if in .Params.tags "vintage"}}
-                    {{ .Render "keyboards-summary" }}
-                {{ end }}
-              {{ end }}
-		</div>
 	</div>
 </main>
 {{ end }}

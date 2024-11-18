@@ -14,16 +14,20 @@
             <!-- First list the custom keyboards and then the vintage ones -->
             {{ if (eq .Page.Name "Keyboards") }}
             <div class="collection-board">
+              <!-- {{ range .Paginator.Pages }} -->
+              <!--   {{if in .Params.tags "custom"}} -->
+              <!--       {{ .Render "keyboards-summary" }} -->
+              <!--   {{ end }} -->
+              <!-- {{ end }} -->
+              <!-- {{ range .Paginator.Pages }} -->
+              <!--   {{if in .Params.tags "vintage"}} -->
+              <!--       {{ .Render "keyboards-summary" }} -->
+              <!--   {{ end }} -->
+              <!-- {{ end }} -->
+
               {{ range .Paginator.Pages }}
-                {{if in .Params.tags "custom"}}
-                    {{ .Render "keyboards-summary" }}
-                {{ end }}
+                  {{ .Render "keyboards-summary" }}
               {{ end }}
-              {{ range .Paginator.Pages }}
-                {{if in .Params.tags "vintage"}}
-                    {{ .Render "keyboards-summary" }}
-                {{ end }}
-            {{ end }}
             </div>
             <!-- Default listing for everything else -->
             {{ else }}
